@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="PT-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cronômetro</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Anton&family=Kanit:ital,wght@1,900&family=Lobster&family=Orbitron:wght@900&family=Roboto:wght@900&display=swap" rel="stylesheet">
+  <style>
+    *{
+      padding: 0;
+      margin: 0;
+      box-sizing: border-box;
+      font-family: 'Roboto', sans-serif;
+    }
+    html, body {
+  height: 100%;
+  width: 100%;
+  background-color: black;}
+h1{
+  font-size: 110px;
+  color:white;
+  padding-top: 30px;
+}
+h2{
+  font-size: 5rem;
+  color: 	#1C1C1C;
+}
+.parar{
+  font-size: 2rem;
+  background-color: red;
+  color: white;
+  padding: 15px 32px;
+  Border-radius: 20px;
+  width:300px;
+  cursor: pointer;
+}
+.parar:hover{
+  background-color: rgb(206, 55, 55);
+  transition: 0.5s;
+}
+.comecar:hover{
+  background-color:rgb(31, 167, 31) ;
+  transition: 0.5s;
+}
+.comecar{
+  font-size: 2rem;
+  background-color: green;
+  color: white;
+  padding: 15px 32px;
+  Border-radius: 20px;
+  width:300px;
+  cursor: pointer;
+}
+main{
+  background-color: #1C1C1C;
+  width: 700px;
+  height: 600px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 40px;
+  border-radius: 20px;
+  border: 1px solid 	#363636;
+}
+.container{
+  background-color: white;
+  width: 220px;
+  padding: 10px;
+  border-radius: 15px;
+  margin-left: auto;
+  margin-right: auto;
+  color:black;
+   border: 1px solid 	#363636;
+}
+  </style>
+</head>
+
+<body>
+ <main>
+  <center>
+  <h1> Cronômetro </h1><br><br><br><br><br>
+  <div class="container">
+  <h2  id='watch'>00</h2>
+  </div>
+  </center> <br><br><br><br><br><br>
+  <center>
+  <button class='parar'onclick='parar();''>Parar</button>
+  <button class='comecar' onclick='comecar();'>Começar</button>
+  </center>
+</main>
+<!--aqui pra baixo é o javascript do meu programa------------->
+  <script>
+    var sec=00
+function comecar(){
+  kk=setInterval(watch,1000)
+  
+}
+
+function watch(){
+  sec++
+  document.getElementById('watch').innerText=sec
+}
+function parar(){
+  clearInterval(kk)
+  sec=0
+}
+  </script>
+<!--aqui pra cima é o javascript do meu programa------------->
+</body>
+</html>
