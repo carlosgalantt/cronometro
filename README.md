@@ -1,12 +1,2 @@
-<!DOCTYPE html>
-<html lang="pr-br">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cronômetro</title>
-</head>
-<body>
-    <img src="../IMAGENS GITHUB/cronômetro.png" alt="imagem do cronometro">
-</body>
-</html>
+![cronômetro](https://user-images.githubusercontent.com/123756073/220723627-46cefe95-820c-430a-ab52-d2997d2549b5.png)
+ 
