@@ -1,1 +1,1 @@
-# Tela-de-cadastro
+<img src="../Documents/cronômetro">
